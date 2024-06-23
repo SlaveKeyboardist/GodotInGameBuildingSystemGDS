@@ -22,3 +22,5 @@ obj/
 # addons/
 # If using VSCode, you might want to ignore the .vscode directory
 .vscode/
+# ignore batch files
+*.bat
