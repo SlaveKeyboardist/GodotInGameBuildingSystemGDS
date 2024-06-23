@@ -19,6 +19,10 @@ config/icon="res://building_system/icon.png"
 
 BSEventBus="*res://building_system/scripts/event_bus.gd"
 
+[dotnet]
+
+project/assembly_name="GodotInGameBuildingSystemGDS"
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/instant-realistic-light/plugin.cfg")
+enabled=PackedStringArray("res://addons/fuku/plugin.cfg", "res://addons/instant-realistic-light/plugin.cfg")
