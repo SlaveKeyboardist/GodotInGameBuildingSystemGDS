@@ -6,7 +6,7 @@ var grid_cells = []
 var _x_size = 200
 var _z_size = 200
 var _cell_size = 1.0
-var _cell_height = 3.0
+var _cell_height = 3
 var _floor_layer_mask: int
 var _wall_layer_mask: int
 

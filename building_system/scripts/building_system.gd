@@ -304,4 +304,4 @@ func set_demolition_mode(active: bool):
 		if is_instance_valid(_demolish_collider):
 			_demolish_collider.get_parent().set_demolition_view(false)
 		_demolish_collider = null
-	BSEventBus.emit_signal("DemolitionModeChanged", _is_demolish_mode_active)
+	BSEventBus.demolition_mode_changed.emit(_is_demolish_mode_active)

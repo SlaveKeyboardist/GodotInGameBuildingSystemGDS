@@ -27,8 +27,12 @@ func _physics_process(delta):
 		velocity = velocity.normalized() * movement_speed * delta
 		global_transform = Transform3D(global_transform.basis, global_transform.origin + velocity)
 
-	# Handle rotations (Q for left, E for right)
+	# Handle rotations (Q for left, E for right, F for up, V for down)
 	if Input.is_action_pressed("rotate_left"):
 		rotate_y(rotation_speed * delta)
 	if Input.is_action_pressed("rotate_right"):
 		rotate_y(-rotation_speed * delta)
+	if Input.is_action_pressed("rotate_up"):
+		rotate_x(rotation_speed * delta)
+	if Input.is_action_pressed("rotate_down"):
+		rotate_x(-rotation_speed * delta)

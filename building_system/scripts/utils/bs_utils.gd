@@ -40,6 +40,8 @@ static func register_input_actions():
 		"move_right": KEY_D,
 		"rotate_left": KEY_Q,
 		"rotate_right": KEY_E,
+		"rotate_up": KEY_F,
+		"rotate_down": KEY_V,
 	}
 	
 	for action_name in input_actions.keys():
