@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildableResource" load_steps=4 format=3 uid="uid://b38pm6qw2hjb7"]
+
+[ext_resource type="PackedScene" uid="uid://cu5qeufe2l0kh" path="res://building_system/assets/scenes/scifi/wall_banner.tscn" id="1_wjavp"]
+[ext_resource type="Script" path="res://building_system/scripts/resources/buildable_resource.gd" id="2_omqab"]
+[ext_resource type="Texture2D" uid="uid://dmahrrpwevmxi" path="res://building_system/assets/textures/sifi/wall-banner.png" id="3_0h4lx"]
+
+[resource]
+script = ExtResource("2_omqab")
+name = "wall-banner"
+description = ""
+texture_image = ExtResource("3_0h4lx")
+object_3d_model = ExtResource("1_wjavp")
+snap_behaviour = 0
+size = Vector3i(0, 0, 0)

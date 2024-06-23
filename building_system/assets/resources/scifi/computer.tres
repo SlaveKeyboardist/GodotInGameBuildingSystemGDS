@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildableResource" load_steps=4 format=3 uid="uid://btf0u8upeg3fd"]
+
+[ext_resource type="PackedScene" uid="uid://c6k5ytecy6fsk" path="res://building_system/assets/scenes/scifi/computer.tscn" id="1_tudc2"]
+[ext_resource type="Script" path="res://building_system/scripts/resources/buildable_resource.gd" id="2_7xw0c"]
+[ext_resource type="Texture2D" uid="uid://d2bc3dfnim45r" path="res://building_system/assets/textures/sifi/computer.png" id="3_muuh1"]
+
+[resource]
+script = ExtResource("2_7xw0c")
+name = "computer"
+description = ""
+texture_image = ExtResource("3_muuh1")
+object_3d_model = ExtResource("1_tudc2")
+snap_behaviour = 0
+size = Vector3i(0, 0, 0)

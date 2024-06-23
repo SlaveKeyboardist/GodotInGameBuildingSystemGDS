@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dnykxpt7bvxck" path="res://building_system/assets/scenes/survival/fence_fortified.tscn" id="1_1hbug"]
 [ext_resource type="Script" path="res://building_system/scripts/resources/buildable_resource.gd" id="2_q2kqp"]
-[ext_resource type="Texture2D" uid="uid://bc3gqpe15f8rc" path="res://building_system/assets/textures/survival/fence-fortified.png" id="3_jfcjh"]
+[ext_resource type="Texture2D" uid="uid://6wyjnfmlwghi" path="res://building_system/assets/textures/survival/fence-fortified.png" id="3_jfcjh"]
 
 [resource]
 script = ExtResource("2_q2kqp")

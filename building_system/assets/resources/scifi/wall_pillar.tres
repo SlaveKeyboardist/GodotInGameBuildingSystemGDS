@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildableResource" load_steps=4 format=3 uid="uid://cws71rwg0ug14"]
+
+[ext_resource type="PackedScene" uid="uid://beuk3jp7vplau" path="res://building_system/assets/scenes/scifi/wall_pillar.tscn" id="1_dfocq"]
+[ext_resource type="Script" path="res://building_system/scripts/resources/buildable_resource.gd" id="2_ygiq0"]
+[ext_resource type="Texture2D" uid="uid://jv35r24o6klq" path="res://building_system/assets/textures/sifi/wall-pillar.png" id="3_f5wc1"]
+
+[resource]
+script = ExtResource("2_ygiq0")
+name = "wall-pillar"
+description = ""
+texture_image = ExtResource("3_f5wc1")
+object_3d_model = ExtResource("1_dfocq")
+snap_behaviour = 0
+size = Vector3i(0, 0, 0)

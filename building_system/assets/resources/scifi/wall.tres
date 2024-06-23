@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildableResource" load_steps=4 format=3 uid="uid://b56dogfbg6bj4"]
+
+[ext_resource type="PackedScene" uid="uid://b6oo7rm0y2u7e" path="res://building_system/assets/scenes/scifi/wall.tscn" id="1_ysrup"]
+[ext_resource type="Script" path="res://building_system/scripts/resources/buildable_resource.gd" id="2_njdh8"]
+[ext_resource type="Texture2D" uid="uid://bjcx7yq12mqff" path="res://building_system/assets/textures/sifi/wall.png" id="3_tankm"]
+
+[resource]
+script = ExtResource("2_njdh8")
+name = "wall"
+description = ""
+texture_image = ExtResource("3_tankm")
+object_3d_model = ExtResource("1_ysrup")
+snap_behaviour = 0
+size = Vector3i(0, 0, 0)

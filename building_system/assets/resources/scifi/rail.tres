@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildableResource" load_steps=4 format=3 uid="uid://dyqiqaqak3o7k"]
+
+[ext_resource type="PackedScene" uid="uid://cc30hqj5uj33t" path="res://building_system/assets/scenes/scifi/rail.tscn" id="1_8ajus"]
+[ext_resource type="Script" path="res://building_system/scripts/resources/buildable_resource.gd" id="2_chdao"]
+[ext_resource type="Texture2D" uid="uid://bhdo2a117ogpb" path="res://building_system/assets/textures/sifi/rail.png" id="3_u6dep"]
+
+[resource]
+script = ExtResource("2_chdao")
+name = "rail"
+description = ""
+texture_image = ExtResource("3_u6dep")
+object_3d_model = ExtResource("1_8ajus")
+snap_behaviour = 0
+size = Vector3i(0, 0, 0)

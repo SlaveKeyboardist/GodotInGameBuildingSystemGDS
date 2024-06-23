@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildableResource" load_steps=4 format=3 uid="uid://c0jhknrvby8d3"]
+
+[ext_resource type="PackedScene" uid="uid://bvc5i5384jcy4" path="res://building_system/assets/scenes/scifi/floor.tscn" id="1_j33k8"]
+[ext_resource type="Script" path="res://building_system/scripts/resources/buildable_resource.gd" id="2_gx1k5"]
+[ext_resource type="Texture2D" uid="uid://c5hf5a4ctx6eu" path="res://building_system/assets/textures/sifi/floor.png" id="3_3staw"]
+
+[resource]
+script = ExtResource("2_gx1k5")
+name = "floor"
+description = ""
+texture_image = ExtResource("3_3staw")
+object_3d_model = ExtResource("1_j33k8")
+snap_behaviour = 0
+size = Vector3i(0, 0, 0)

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildableResource" load_steps=4 format=3 uid="uid://cwap7j4kdx8j"]
+
+[ext_resource type="PackedScene" uid="uid://db6tw2h4evi6b" path="res://building_system/assets/scenes/scifi/wall_door.tscn" id="1_84hbj"]
+[ext_resource type="Script" path="res://building_system/scripts/resources/buildable_resource.gd" id="2_dkksi"]
+[ext_resource type="Texture2D" uid="uid://7mnsx5krf5es" path="res://building_system/assets/textures/sifi/wall-door.png" id="3_6imgx"]
+
+[resource]
+script = ExtResource("2_dkksi")
+name = "wall-door"
+description = ""
+texture_image = ExtResource("3_6imgx")
+object_3d_model = ExtResource("1_84hbj")
+snap_behaviour = 0
+size = Vector3i(0, 0, 0)

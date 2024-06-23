@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cfcl6m4g34a8y" path="res://building_system/assets/scenes/survival/campfire_pit.tscn" id="1_8gqbt"]
 [ext_resource type="Script" path="res://building_system/scripts/resources/buildable_resource.gd" id="2_ldc8g"]
-[ext_resource type="Texture2D" uid="uid://h5ns03kvyswq" path="res://building_system/assets/textures/survival/campfire-pit.png" id="3_7uyha"]
+[ext_resource type="Texture2D" uid="uid://du35dgmu2tnqy" path="res://building_system/assets/textures/survival/campfire-pit.png" id="3_7uyha"]
 
 [resource]
 script = ExtResource("2_ldc8g")
@@ -11,4 +11,4 @@ description = ""
 texture_image = ExtResource("3_7uyha")
 object_3d_model = ExtResource("1_8gqbt")
 snap_behaviour = 2
-size = Vector3(0, 0, 0)
+size = Vector3i(0, 0, 0)
