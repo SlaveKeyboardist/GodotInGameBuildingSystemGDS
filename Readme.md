@@ -1,3 +1,9 @@
+A fork of the GodotInGameBuildingSystemGDS project by https://github.com/MarkoDM
+
+Some bug fixes have been implimented
+
+
+
 # In Game Building System for Godot
 
 Supporting this project helps me continue to work on it and improve it. If you find it useful, consider contributing through the following methods:
