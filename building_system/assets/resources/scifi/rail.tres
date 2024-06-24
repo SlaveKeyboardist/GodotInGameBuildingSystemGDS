@@ -10,5 +10,5 @@ name = "rail"
 description = ""
 texture_image = ExtResource("3_u6dep")
 object_3d_model = ExtResource("1_8ajus")
-snap_behaviour = 0
-size = Vector3i(0, 0, 0)
+snap_behaviour = 1
+size = Vector3i(2, 1, 0)

@@ -10,5 +10,5 @@ name = "wall-pillar"
 description = ""
 texture_image = ExtResource("3_f5wc1")
 object_3d_model = ExtResource("1_dfocq")
-snap_behaviour = 0
-size = Vector3i(0, 0, 0)
+snap_behaviour = 1
+size = Vector3i(2, 1, 0)

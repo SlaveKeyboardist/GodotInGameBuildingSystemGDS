@@ -11,4 +11,4 @@ description = ""
 texture_image = ExtResource("3_ggcs7")
 object_3d_model = ExtResource("1_3k580")
 snap_behaviour = 0
-size = Vector3i(0, 0, 0)
+size = Vector3i(1, 0, 1)

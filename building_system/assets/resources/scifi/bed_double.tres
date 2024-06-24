@@ -10,5 +10,5 @@ name = "bed-double"
 description = ""
 texture_image = ExtResource("3_docig")
 object_3d_model = ExtResource("1_a7l6c")
-snap_behaviour = 0
+snap_behaviour = 2
 size = Vector3i(0, 0, 0)

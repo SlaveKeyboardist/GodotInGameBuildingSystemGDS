@@ -10,5 +10,5 @@ name = "computer"
 description = ""
 texture_image = ExtResource("3_muuh1")
 object_3d_model = ExtResource("1_tudc2")
-snap_behaviour = 0
+snap_behaviour = 2
 size = Vector3i(0, 0, 0)

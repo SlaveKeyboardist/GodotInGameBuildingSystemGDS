@@ -8,5 +8,5 @@ script = ExtResource("2_2gkq1")
 name = "wall-window-banner"
 description = ""
 object_3d_model = ExtResource("1_8wxuu")
-snap_behaviour = 0
-size = Vector3i(0, 0, 0)
+snap_behaviour = 1
+size = Vector3i(2, 1, 0)

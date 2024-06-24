@@ -10,5 +10,5 @@ name = "wall-banner"
 description = ""
 texture_image = ExtResource("3_0h4lx")
 object_3d_model = ExtResource("1_wjavp")
-snap_behaviour = 0
-size = Vector3i(0, 0, 0)
+snap_behaviour = 1
+size = Vector3i(2, 1, 0)

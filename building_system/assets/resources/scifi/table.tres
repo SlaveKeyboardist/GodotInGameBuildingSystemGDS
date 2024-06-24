@@ -10,5 +10,5 @@ name = "table"
 description = ""
 texture_image = ExtResource("3_7jdyh")
 object_3d_model = ExtResource("1_2btb8")
-snap_behaviour = 0
+snap_behaviour = 2
 size = Vector3i(0, 0, 0)

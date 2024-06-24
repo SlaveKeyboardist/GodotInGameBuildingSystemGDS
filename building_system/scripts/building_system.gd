@@ -196,9 +196,13 @@ func handle_object_placement_event(event):
 
 func handle_object_demolish_event(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed and _is_demolish_mode_active and _demolish_collider:
-		var main_node = _demolish_collider.get_parent() as BuildableInstance
-		if main_node:
-			main_node.clear_object()
+		if is_instance_valid(_demolish_collider):
+			var main_node = _demolish_collider.get_parent() as BuildableInstance
+			if main_node:
+				main_node.clear_object()
+				_demolish_collider = null
+			else:
+				print("Error: main_node is null in handle_object_demolish_event.")
 		else:
 			print("Error: main_node is null in handle_object_demolish_event.")
 
