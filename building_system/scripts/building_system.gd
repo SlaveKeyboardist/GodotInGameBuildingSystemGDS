@@ -137,7 +137,12 @@ func handle_grid_level_change_event(event):
 func handle_object_rotation_event(event):
 	if event.is_action_pressed("rotate_object") and _mouse_object.has_mouse_object():
 		_current_rotation = (_current_rotation + 90) % 360
-		_mouse_object.rotate_object(_current_rotation)
+		if _mouse_object:
+			print("Rotating mouse object with rotation: ", _current_rotation)
+			_mouse_object.rotate_object(_current_rotation)
+		else:
+			print("Error: _mouse_object is null when trying to rotate.")
+
 
 func handle_cancel_event(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and event.pressed and _selected_object:
@@ -192,10 +197,14 @@ func handle_object_placement_event(event):
 func handle_object_demolish_event(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed and _is_demolish_mode_active and _demolish_collider:
 		var main_node = _demolish_collider.get_parent() as BuildableInstance
-		main_node.clear_object()
+		if main_node:
+			main_node.clear_object()
+		else:
+			print("Error: main_node is null in handle_object_demolish_event.")
 
 func try_to_place_object():
 	if _selected_object:
+		print("Placing object: ", _selected_object)
 		if _selected_object.snap_behaviour != BSEnums.SnapBehaviour.FREE:
 			_active_grid.try_to_place_object(_selected_object, _mouse_object.get_y_rotation_in_degrees(), _last_snapped_position)
 		else:
@@ -206,6 +215,8 @@ func try_to_place_object():
 			buildable_instance.global_position = Vector3(_current_mouse_position.x, _active_grid.global_position.y, _current_mouse_position.z)
 			buildable_instance.rotate_y(_mouse_object.get_y_rotation_in_rad())
 			AnimationUtils.animate_placement(buildable_instance.object_instance)
+	else:
+		print("Error: _selected_object is null in try_to_place_object.")
 
 func get_layer_mask(type: BSEnums.SnapBehaviour) -> int:
 	match type:

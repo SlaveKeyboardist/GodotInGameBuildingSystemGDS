@@ -54,6 +54,13 @@ func has_mouse_object() -> bool:
 	return _mouse_node_child != null
 
 func get_y_rotation_in_degrees() -> float:
+	if _mouse_node_child == null:
+		print("Error: _mouse_node_child is null.")
+		return 0.0
+	if not _mouse_node_child.has_method("get_rotation_degrees"):
+		print("Error: _mouse_node_child does not have rotation_degrees property.")
+		return 0.0
+	print("Current Y rotation in degrees:", _mouse_node_child.rotation_degrees.y)
 	return _mouse_node_child.rotation_degrees.y
 
 func get_y_rotation_in_rad() -> float:
