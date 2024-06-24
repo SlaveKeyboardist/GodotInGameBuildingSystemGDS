@@ -25,4 +25,4 @@ project/assembly_name="GodotInGameBuildingSystemGDS"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/fuku/plugin.cfg", "res://addons/instant-realistic-light/plugin.cfg")
+enabled=PackedStringArray("res://addons/AI-Context-Generator/plugin.cfg", "res://addons/fuku/plugin.cfg", "res://addons/instant-realistic-light/plugin.cfg")
